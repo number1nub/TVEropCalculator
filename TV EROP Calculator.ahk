@@ -1,10 +1,9 @@
 #NoEnv
 #SingleInstance, Force
 SetWorkingDir, %A_ScriptDir%
-;~ SetBatchLines, -1
 Menu, Tray, Icon, % A_ScriptDir "\" RegExReplace(A_ScriptName, "\.ahk|exe$") ".ico"
 
-global units:={"FT/HR":[{mult:0.016667}], "M/HR":[{div:60}], "MIN/M":[{pow:-1}]}
+global units:={"FT/HR":[{mult:0.016667}], "M/HR":[{div:60}], "MIN/M":[{pow:-1}]}, Version:="1.0.1"
 
 Gui New, +AlwaysOnTop +hwndGuiHwnd
 Gui,Font, s11, Segoe UI
